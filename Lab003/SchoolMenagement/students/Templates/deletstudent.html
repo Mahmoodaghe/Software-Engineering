@@ -1,0 +1,22 @@
+<style>
+    .div1{
+
+        background: rebeccapurple;
+        width: 150;
+        height: 100;
+        border-top-left-radius: 30%;
+    
+    }
+</style>
+{% extends 'base.html' %}
+{% block content %}
+<a href="{% url 'hom' %}">العودة إلى الصفحة الرئيسية</a>
+{% block pagetitle %}
+<center>
+<div class="div1">
+<h1>delet page</h1>
+</div>
+
+</center>
+{% endblock %}
+{% endblock %}

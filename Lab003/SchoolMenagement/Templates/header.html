@@ -1,0 +1,15 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<header class="main-header">
+  <div class="container">
+    <h1 class="logo">موقعي</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="{% url 'hom' %}">الرئيسية</a></li>
+        <li><a href="{% url 'show' %}">عرض الطلاب</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+        <li><img src="{% static 'image/1.jpg' %}" alt="image" width="50" height="50"></li>
+      </ul>
+    </nav>
+  </div>
+</header>

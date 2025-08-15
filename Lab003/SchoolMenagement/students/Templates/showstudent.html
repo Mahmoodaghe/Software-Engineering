@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Management</title>
+     <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid #444;
+            padding: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+ {% extends 'base.html' %}
+ {% block content %}
+    <center> <h1>قائمة الطلاب</h1></center>
+    <table>
+        <thead>
+            <tr>
+                <th>F_name </th>
+                <th>L_name </th>
+                <th>age</th>
+                <th>level</th>
+                <th>statust</th>
+                <th>report</th>
+                
+            </tr>
+        </thead>
+<tbody>
+    {% for student in Stud %}
+      
+        <tr>
+            <td>{{ student.F_name }}</td>
+            <td>{{ student.L_name}}</td>
+            <td>{{ student.age}}</td>
+             <td>{{ student.level }}</td>
+             <td>{{ student.statust }}</td>
+             <td>{{ student.report }}</td>
+        </tr>
+    {% endfor %}
+</tbody>  
+ {% endblock %}
+</body>
+</html>

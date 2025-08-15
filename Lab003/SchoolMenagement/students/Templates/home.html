@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> student Management</title>
+    <style>
+            .div2{
+                flex-direction: row;
+                
+            }
+    </style>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+    <div class="div2">
+    <span> <a href="{% url 'show' %}">show</a></span>
+    <span><a href="{% url 'edit' %}">edit</a></span>
+    <span> <a href="{% url 'delet' %}">Delet</a></span>
+    </div>
+{% endblock %}
+</body>
+</html>
